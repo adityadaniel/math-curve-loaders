@@ -789,6 +789,7 @@ function formatCurveCode(config) {
 
 function setActiveInstance(instance) {
   activeInstance = instance;
+  document.body.classList.add("modal-open");
   if (openAnimationFrame) {
     cancelAnimationFrame(openAnimationFrame);
     openAnimationFrame = 0;
@@ -830,6 +831,7 @@ function setActiveInstance(instance) {
 
 function clearActiveInstance() {
   activeInstance = null;
+  document.body.classList.remove("modal-open");
   if (openAnimationFrame) {
     cancelAnimationFrame(openAnimationFrame);
     openAnimationFrame = 0;
