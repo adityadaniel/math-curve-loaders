@@ -68,8 +68,8 @@ const curves = [
   {
     name: "Original Thinking",
     tag: "Custom Rose Trail",
-    descriptionEn: "The original petal trail loader, kept as the anchor point for the whole collection.",
-    descriptionZh: "你最初那版花瓣粒子轨迹，作为整个画廊的起点保留下来。",
+    descriptionEn: "The base circle is carved by a sevenfold cosine term, so the trail blooms into a rotating seven-petal ring.",
+    descriptionZh: "基础圆周叠加了 7 倍频余弦项，所以轨迹会长成一个旋转中的七瓣花环。",
     formula: [
       "x(t) = 50 + (7 cos t - 3s cos 7t) * 3.9",
       "y(t) = 50 + (7 sin t - 3s sin 7t) * 3.9",
@@ -95,8 +95,8 @@ const curves = [
   {
     name: "Thinking Five",
     tag: "Custom Rose Trail",
-    descriptionEn: "A cleaner five-loop variation of the original, with the same motion language and a lighter silhouette.",
-    descriptionZh: "和原版同一种语言，但把内部环绕圆数量减到 5，形态更简洁。",
+    descriptionEn: "Replacing the sevenfold term with a fivefold term reduces the inner loops, giving the curve a cleaner five-petal rhythm.",
+    descriptionZh: "把 7 倍频项换成 5 倍频后，内部环绕圈减少，整条轨迹会呈现更简洁的五瓣节奏。",
     formula: [
       "x(t) = 50 + (7 cos t - 3s cos 5t) * 3.9",
       "y(t) = 50 + (7 sin t - 3s sin 5t) * 3.9",
@@ -122,8 +122,8 @@ const curves = [
   {
     name: "Thinking Nine",
     tag: "Custom Rose Trail",
-    descriptionEn: "A denser nine-loop variant that keeps the original rhythm while adding a tighter floral cadence.",
-    descriptionZh: "保持原版节奏，把环绕圆数量加到 9，轨迹会更密一些。",
+    descriptionEn: "A ninefold term packs more inner turns into the same orbit, so the floral ring feels denser and more finely braided.",
+    descriptionZh: "9 倍频项会把更多小回环压进同一圈轨道里，所以花环会更密、更细。",
     formula: [
       "x(t) = 50 + (7 cos t - 3s cos 9t) * 3.9",
       "y(t) = 50 + (7 sin t - 3s sin 9t) * 3.9",
@@ -149,8 +149,8 @@ const curves = [
   {
     name: "Rose Orbit",
     tag: "r = cos(kθ)",
-    descriptionEn: "A rose-curve interpretation of the original idea, with a softer orbital bloom and clearer symmetry.",
-    descriptionZh: "玫瑰线的花瓣结构，保留了你原来那种旋转中的花感。",
+    descriptionEn: "The radius expands and contracts with cos(7t), so the orbit breathes into repeated petals while staying anchored to a circle.",
+    descriptionZh: "半径随 cos(7t) 起伏，所以整条轨迹会在圆周上反复鼓起花瓣，同时保持绕圈感。",
     formula: [
       "r(t) = 7 - 2.7s cos(7t)",
       "x(t) = 50 + cos t · r(t) · 3.9",
@@ -175,8 +175,8 @@ const curves = [
   {
     name: "Rose Curve",
     tag: "r = a cos(kθ)",
-    descriptionEn: "A canonical five-petal rose curve, closer to the textbook polar form with clear symmetric lobes.",
-    descriptionZh: "更接近教材里的标准五瓣玫瑰线，花瓣对称，极坐标轮廓更明确。",
+    descriptionEn: "Using r = a cos(5t) creates five evenly spaced lobes, and the breathing multiplier gently swells each petal in and out.",
+    descriptionZh: "使用 r = a cos(5t) 会得到五个均匀分布的花瓣，再叠加呼吸倍率后，每片花瓣都会轻微胀缩。",
     formula: [
       "r(t) = a(0.72 + 0.28s) cos(5t)",
       "a = 9.2 + 0.6s",
@@ -203,8 +203,8 @@ const curves = [
   {
     name: "Rose Two",
     tag: "r = a cos(2θ)",
-    descriptionEn: "A two-lobe rose with the same breathing inner-core feel as the original, broad and graphic in silhouette.",
-    descriptionZh: "固定为 k = 2 的玫瑰线，保留像原版一样的内圆呼吸感，轮廓更宽、更图形化。",
+    descriptionEn: "With k = 2, the cosine radius forms broad opposing petals, and the breathing factor makes the center pulse like the original.",
+    descriptionZh: "当 k = 2 时，余弦半径会生成一组宽阔的对称花瓣，呼吸倍率则让中心像原版一样鼓动。",
     formula: [
       "r(t) = a(0.72 + 0.28s) cos(2t)",
       "a = 9.2 + 0.6s",
@@ -231,8 +231,8 @@ const curves = [
   {
     name: "Rose Three",
     tag: "r = a cos(3θ)",
-    descriptionEn: "A three-lobe rose that keeps the original breathing pulse, with a more pinwheel-like cadence.",
-    descriptionZh: "固定为 k = 3 的玫瑰线，延续原版的内圆呼吸感，节奏更像缓慢展开的风车。",
+    descriptionEn: "With k = 3, the curve resolves into three rotating petals, and the inner breathing keeps the motion from feeling mathematically rigid.",
+    descriptionZh: "当 k = 3 时，曲线会落成三瓣旋转结构，而内层呼吸感会让它不只是静态的数学图形。",
     formula: [
       "r(t) = a(0.72 + 0.28s) cos(3t)",
       "a = 9.2 + 0.6s",
@@ -259,8 +259,8 @@ const curves = [
   {
     name: "Rose Four",
     tag: "r = a cos(4θ)",
-    descriptionEn: "A four-lobe rose with the same soft breathing core, more balanced and emblem-like than the others.",
-    descriptionZh: "固定为 k = 4 的玫瑰线，同样加入原版那种内圆呼吸感，整体更均衡，也更像徽记。",
+    descriptionEn: "With k = 4, the petals settle into a balanced cross-like rose, and the breathing core adds the same soft pulse as the original loader.",
+    descriptionZh: "当 k = 4 时，花瓣会落成更均衡的十字型玫瑰，而内圆呼吸让它保留原版那种轻微脉动。",
     formula: [
       "r(t) = a(0.72 + 0.28s) cos(4t)",
       "a = 9.2 + 0.6s",
@@ -287,8 +287,8 @@ const curves = [
   {
     name: "Lissajous Drift",
     tag: "x = sin(at), y = sin(bt)",
-    descriptionEn: "A more oscilloscope-like trace with elegant crossings and a stronger sense of woven motion.",
-    descriptionZh: "更像电子示波器里的轨迹，路径穿插感更强。",
+    descriptionEn: "Different sine frequencies on x and y make the path cross itself repeatedly, producing the woven feel of an oscilloscope trace.",
+    descriptionZh: "x 和 y 使用不同频率的正弦后，路径会不断交叉回绕，所以会呈现示波器一样的编织感。",
     formula: [
       "A = 24 + 6s",
       "x(t) = 50 + sin(3t + π/2) · A",
@@ -313,8 +313,8 @@ const curves = [
   {
     name: "Lemniscate Bloom",
     tag: "Bernoulli Lemniscate",
-    descriptionEn: "A breathing infinity loop with a gentler cadence and a more poised, balanced center.",
-    descriptionZh: "双纽线像一个呼吸中的无限符号，节奏更优雅。",
+    descriptionEn: "The 1 + sin²t denominator pinches the center while preserving two lobes, so the curve naturally reads as a breathing infinity sign.",
+    descriptionZh: "分母里的 1 + sin²t 会把中间收紧、两侧保留双环，因此它天然像一个会呼吸的无限符号。",
     formula: [
       "a = 20 + 7s",
       "x(t) = 50 + a cos t / (1 + sin² t)",
@@ -340,8 +340,8 @@ const curves = [
   {
     name: "Hypotrochoid Loop",
     tag: "Inner Spirograph",
-    descriptionEn: "An inner spirograph loop that feels more engineered, with tightly wound turns and mechanical precision.",
-    descriptionZh: "内旋轮线会生成更复杂的卷曲回环，机械感更明显。",
+    descriptionEn: "The rolling-circle terms create nested turns and offsets, so the path feels like a compact spirograph traced by a machine.",
+    descriptionZh: "滚动圆项会叠出嵌套回环和偏移卷曲，因此整条路径会像机械画出来的紧凑内旋轮线。",
     formula: [
       "x(t) = 50 + ((R-r) cos t + d cos((R-r)t/r)) · 3.05",
       "y(t) = 50 + ((R-r) sin t - d sin((R-r)t/r)) · 3.05",
@@ -370,8 +370,8 @@ const curves = [
   {
     name: "Butterfly Phase",
     tag: "Butterfly Curve",
-    descriptionEn: "The most organic path in the set, reading almost like wings flexing through the particle trail.",
-    descriptionZh: "蝴蝶曲线最有生命感，粒子会像在拍动翅膀。",
+    descriptionEn: "Exponential and high-frequency cosine terms stretch the wings unevenly, giving the path its unmistakably fluttering butterfly shape.",
+    descriptionZh: "指数项和高频余弦会把两侧翅膀不均匀地拉开，所以整条轨迹会像蝴蝶一样拍动。",
     formula: [
       "u = 12t",
       "B(u) = e^{cos u} - 2 cos 4u - sin^5(u/12)",
@@ -401,8 +401,8 @@ const curves = [
   {
     name: "Cardioid Glow",
     tag: "Cardioid",
-    descriptionEn: "A cardioid rendered as a soft emotional pulse, collapsing inward before opening back out.",
-    descriptionZh: "心形线像向内聚拢再释放的呼吸波，情绪感更强。",
+    descriptionEn: "Because r = a(1 - cos t) collapses to zero at one side and swells on the other, the curve reads like a soft pulsing heart wave.",
+    descriptionZh: "由于 r = a(1 - cos t) 会在一侧收成尖点、另一侧鼓起，所以这条曲线会像温和起伏的心形脉冲。",
     formula: [
       "a = 8.4 + 0.8s",
       "r(t) = a(1 - cos t)",
@@ -429,8 +429,8 @@ const curves = [
   {
     name: "Cardioid Heart",
     tag: "r = a(1 + cosθ)",
-    descriptionEn: "A standard cardioid rotated into a clearer upright heart silhouette for a more instantly readable shape.",
-    descriptionZh: "把标准 cardioid 旋转成更直观的竖向爱心轮廓，视觉上更接近我们熟悉的心形。",
+    descriptionEn: "Starting from r = a(1 + cos t) and rotating the coordinates turns the textbook cardioid into a more legible upright heart.",
+    descriptionZh: "从 r = a(1 + cos t) 出发，再把坐标整体旋转后，标准心形线就会变成更直观的竖向爱心。",
     formula: [
       "r(t) = a(1 + cos t)",
       "a = 8.8 + 0.8s",
@@ -459,8 +459,8 @@ const curves = [
   {
     name: "Heart Wave",
     tag: "f(x) Heart Wave",
-    descriptionEn: "A heart-shaped wave built from a function plot, where parameter b controls the inner ripple density.",
-    descriptionZh: "幂函数、三角函数与椭圆边界组合出的心形波纹，参数 b 控制内部波纹密度。",
+    descriptionEn: "The x^(2/3) envelope supplies the heart outline, while sin(bπx) fills its interior with adjustable horizontal ripples.",
+    descriptionZh: "x^(2/3) 负责给出爱心外轮廓，sin(bπx) 则把可调密度的横向波纹填进心形内部。",
     formula: [
       "f(x) = x^(2/3) + 0.9√(3.3 - x²) sin(bπx)",
       "screenY ∝ 1.75 - f(x)",
@@ -497,8 +497,8 @@ const curves = [
   {
     name: "Spiral Search",
     tag: "Archimedean Spiral",
-    descriptionEn: "A closed-loop spiral that still feels exploratory, but no longer snaps or truncates at the seam.",
-    descriptionZh: "改成闭环的螺旋感轨迹后，保留搜索扩散感，也不会有被截断的跳变。",
+    descriptionEn: "A fast-growing angle combined with a cosine-modulated radius creates a spiral that opens out and closes cleanly back into itself.",
+    descriptionZh: "快速增长的角度配合被余弦调制的半径，会形成向外展开又能平顺闭合的螺旋轨迹。",
     formula: [
       "θ(t) = 4t",
       "r(t) = 8 + (1 - cos t)(8.5 + 2.4s)",
@@ -525,8 +525,8 @@ const curves = [
   {
     name: "Fourier Flow",
     tag: "Fourier Curve",
-    descriptionEn: "Layered sine components combine into a living signal, somewhere between motion graphic and heartbeat.",
-    descriptionZh: "几组正弦叠加后会形成一种很像活体信号的流动轨迹。",
+    descriptionEn: "Several sine and cosine components interfere with one another, so the shape keeps mutating like a living waveform.",
+    descriptionZh: "多组正弦和余弦彼此干涉后，轮廓会持续变形，看起来像一条有生命的信号波。",
     formula: [
       "x(t) = 50 + 17 cos t + 7.5 cos(3t + 0.6m) + 3.2 sin(5t - 0.4)",
       "y(t) = 50 + 15 sin t + 8.2 sin(2t + 0.25) - 4.2 cos(4t - 0.5m)",

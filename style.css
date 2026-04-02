@@ -103,6 +103,10 @@ body {
   flex-shrink: 0;
 }
 
+.repo-link-text {
+  white-space: nowrap;
+}
+
 .showcase {
   max-width: 1080px;
   margin: 0 auto;
