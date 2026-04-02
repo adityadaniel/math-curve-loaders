@@ -23,6 +23,12 @@ It includes:
 
 Open `index.html` directly in a browser.
 
+## Live Demo
+
+Once GitHub Pages finishes deploying, the site should be available at:
+
+`https://paidax01.github.io/math-curve-loaders/`
+
 ## Why
 
 This project explores how mathematical parameterizations can become expressive UI loading states while staying lightweight and dependency-free.
