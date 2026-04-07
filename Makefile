@@ -6,7 +6,7 @@ SIMULATOR_NAME := iPhone 17
 DESTINATION := platform=iOS Simulator,name=$(SIMULATOR_NAME)
 DERIVED_DATA := .build/DerivedData
 APP_PATH := $(DERIVED_DATA)/Build/Products/$(CONFIGURATION)-iphonesimulator/$(SCHEME).app
-BUNDLE_ID := com.paidax.mathcurveloaders.app
+BUNDLE_ID := com.adityadaniel.MathCurveLoaders
 SWIFT_FORMAT := xcrun swift-format
 SWIFT_FORMAT_CONFIG := .swift-format
 SWIFT_SOURCES := MathCurveKit MathCurveLoadersApp
