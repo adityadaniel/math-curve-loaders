@@ -6,6 +6,23 @@ Originally this project was a JavaScript/Web implementation of mathematical curv
 This repository now also contains the Swift port of that implementation: `MathCurveKit` (SPM package) and
 `MathCurveLoadersApp` (SwiftUI iOS example app).
 
+## Swift Port
+
+The Swift port is a native reimplementation of the original JavaScript curve engine and interaction model.
+
+- `MathCurveKit` exposes reusable APIs for curve specs, runtime parameters, and `CurveLoaderView`
+- `MathCurveLoadersApp` is the sample iOS app that showcases all loaders with live configuration controls
+- the goal is behavioral parity with the web implementation, while giving iOS-first SwiftUI integration
+
+## Swift Demo
+
+Demo 1: [assets/demo-1.mp4](assets/demo-1.mp4)  
+Demo 2: [assets/demo-2.mp4](assets/demo-2.mp4)
+
+<video src="assets/demo-1.mp4" controls muted playsinline width="360"></video>
+
+<video src="assets/demo-2.mp4" controls muted playsinline width="360"></video>
+
 It includes:
 
 - the original particle trail loader
