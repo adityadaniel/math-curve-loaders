@@ -10,7 +10,7 @@ This repository now also contains the Swift port of that implementation: `MathCu
 
 | Demo 1 | Demo 2 |
 | --- | --- |
-| ![Demo](/assets/demo-1.mp4) | ![Demo](/assets/demo-2.mp4) |
+| <video src="assets/demo-1.mp4" controls muted playsinline width="320"></video><br>[Open demo-1.mp4](assets/demo-1.mp4) | <video src="assets/demo-2.mp4" controls muted playsinline width="320"></video><br>[Open demo-2.mp4](assets/demo-2.mp4) |
 
 ## Why
 
