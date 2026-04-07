@@ -2,22 +2,25 @@
 
 [Live Preview](https://paidax01.github.io/math-curve-loaders/)
 
-A small gallery of mathematical curve based loading animations built with plain HTML, CSS, and JavaScript.
+Originally this project was a JavaScript/Web implementation of mathematical curve-based loading animations.
+This repository now also contains the Swift port of that implementation: `MathCurveKit` (SPM package) and
+`MathCurveLoadersApp` (SwiftUI iOS example app).
 
 It includes:
 
 - the original particle trail loader
 - a collection of curve variants such as rose curves, Lissajous curves, hypotrochoids, cardioids, Cassini ovals, and Fourier-style paths
+- the original JavaScript/web preview implementation
 - click-to-open modal previews
 - per-curve formula notes and code snippets
 - copy support for formula and code
-- a native SwiftUI port with reusable `MathCurveKit` module and iOS demo app
+- a SwiftUI port with reusable `MathCurveKit` module and iOS demo app
 
 ## Files
 
 - `index.html`: gallery entry
 - `style.css`: layout, modal, and visual styles
-- `main.js`: animation engine, curve definitions, modal interactions
+- `main.js`: original JS animation engine, curve definitions, modal interactions
 - `original.html`: standalone original loader demo
 - `original.css`
 - `original.js`
