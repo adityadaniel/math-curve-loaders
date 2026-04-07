@@ -7,10 +7,9 @@ This repository now also contains the Swift port of that implementation: `MathCu
 `MathCurveLoadersApp` (SwiftUI iOS example app).
 
 ## Swift Demo
-
 | Demo 1 | Demo 2 |
 | --- | --- |
-| <video src="assets/demo-1.mp4" controls muted playsinline width="320"></video><br>[Open demo-1.mp4](assets/demo-1.mp4) | <video src="assets/demo-2.mp4" controls muted playsinline width="320"></video><br>[Open demo-2.mp4](assets/demo-2.mp4) |
+| <video src="https://github.com/user-attachments/assets/c99f3998-890a-48e6-9250-530a72d95772" controls muted playsinline width="320"></video><br>[Open demo-1.mp4](assets/demo-1.mp4) | <video src="https://github.com/user-attachments/assets/ff11e000-f032-4565-8abe-1a9e6b93f99e" controls muted playsinline width="320"></video><br>[Open demo-2.mp4](assets/demo-2.mp4) |
 
 ## Why
 
