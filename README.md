@@ -8,8 +8,8 @@ This repository now also contains the Swift port of that implementation: `MathCu
 
 ## Swift Demo
 
-![Demo 1](assets/demo-1.mp4)
-![Demo 2](assets/demo-2.mp4)
+- [Demo 1 (MP4)](https://raw.githubusercontent.com/adityadaniel/math-curve-loaders/main/assets/demo-1.mp4)
+- [Demo 2 (MP4)](https://raw.githubusercontent.com/adityadaniel/math-curve-loaders/main/assets/demo-2.mp4)
 
 ## Why
 
