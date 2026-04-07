@@ -1,10 +1,19 @@
-# Math Curve Loaders
+# Math Curve Loaders - SwiftUI Port
 
 [Live Preview](https://paidax01.github.io/math-curve-loaders/)
 
-Originally this project was a JavaScript/Web implementation of mathematical curve-based loading animations.
+This project began as a JavaScript/Web implementation of mathematical curve-based loading animations.
 This repository now also contains the Swift port of that implementation: `MathCurveKit` (SPM package) and
 `MathCurveLoadersApp` (SwiftUI iOS example app).
+
+## Swift Demo
+
+![Demo 1](assets/demo-1.mp4)
+![Demo 2](assets/demo-2.mp4)
+
+## Why
+
+This project explores how mathematical parameterizations can become expressive UI loading states while staying lightweight and dependency-free.
 
 ## Swift Port
 
@@ -13,15 +22,6 @@ The Swift port is a native reimplementation of the original JavaScript curve eng
 - `MathCurveKit` exposes reusable APIs for curve specs, runtime parameters, and `CurveLoaderView`
 - `MathCurveLoadersApp` is the sample iOS app that showcases all loaders with live configuration controls
 - the goal is behavioral parity with the web implementation, while giving iOS-first SwiftUI integration
-
-## Swift Demo
-
-Demo 1: [assets/demo-1.mp4](assets/demo-1.mp4)  
-Demo 2: [assets/demo-2.mp4](assets/demo-2.mp4)
-
-<video src="assets/demo-1.mp4" controls muted playsinline width="360"></video>
-
-<video src="assets/demo-2.mp4" controls muted playsinline width="360"></video>
 
 It includes:
 
@@ -52,12 +52,15 @@ Open `index.html` directly in a browser.
 
 ## SwiftUI Run
 
-1. Generate/update the Xcode project:
-   - `xcodegen generate`
-2. Open `MathCurveLoaders.xcodeproj` in Xcode and run `MathCurveLoadersApp`.
+Use the provided `Makefile` for all CLI workflows:
 
-CLI test run:
-- `xcodebuild test -project MathCurveLoaders.xcodeproj -scheme MathCurveLoadersApp -destination 'platform=iOS Simulator,name=iPhone 17'`
+- `make generate`: generate/update `MathCurveLoaders.xcodeproj`
+- `make build`: build `MathCurveLoadersApp` for simulator
+- `make run`: install and launch on the configured simulator
+- `make test`: run app + package tests
+- `make lint`: lint Swift sources with `swift-format`
+
+If you prefer Xcode UI, run `make generate` first, then open `MathCurveLoaders.xcodeproj`.
 
 ## Swift Package Manager
 
@@ -126,7 +129,3 @@ CurveLoaderView(style: .rose)
 ```
 
 `CurveLoaderView(spec:parameters:)` remains available for full low-level control.
-
-## Why
-
-This project explores how mathematical parameterizations can become expressive UI loading states while staying lightweight and dependency-free.
