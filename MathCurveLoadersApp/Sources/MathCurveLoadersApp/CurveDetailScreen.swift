@@ -14,15 +14,23 @@ struct CurveDetailScreen: View {
   }
 
   var body: some View {
-    ScrollView {
-      VStack(alignment: .leading, spacing: 20) {
-        previewBlock
-        metadataBlock
-        controlsBlock
-        textBlock(title: AppStrings.formulaTitle, content: state.formulaText)
-        textBlock(title: AppStrings.codeTitle, content: state.codeText)
+    VStack(spacing: 0) {
+      previewBlock
+        .padding([.top, .horizontal])
+
+      Divider()
+        .padding(.top, 12)
+
+      ScrollView {
+        VStack(alignment: .leading, spacing: 20) {
+          metadataBlock
+          controlsBlock
+          textBlock(title: AppStrings.formulaTitle, content: state.formulaText)
+          textBlock(title: AppStrings.codeTitle, content: state.codeText)
+        }
+        .padding([.horizontal, .bottom])
+        .padding(.top, 12)
       }
-      .padding()
     }
     .navigationTitle(spec.name)
     .navigationBarTitleDisplayMode(.inline)
