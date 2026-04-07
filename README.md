@@ -8,8 +8,9 @@ This repository now also contains the Swift port of that implementation: `MathCu
 
 ## Swift Demo
 
-- ![](https://raw.githubusercontent.com/adityadaniel/math-curve-loaders/main/assets/demo-1.mp4)
-- ![](https://raw.githubusercontent.com/adityadaniel/math-curve-loaders/main/assets/demo-2.mp4)
+| Demo 1 | Demo 2 |
+| --- | --- |
+| <video src="https://raw.githubusercontent.com/adityadaniel/math-curve-loaders/main/assets/demo-1.mp4" controls muted playsinline width="360"></video> | <video src="https://raw.githubusercontent.com/adityadaniel/math-curve-loaders/main/assets/demo-2.mp4" controls muted playsinline width="360"></video> |
 
 ## Why
 
