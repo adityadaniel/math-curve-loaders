@@ -1,0 +1,69 @@
+name: MathCurveLoaders
+options:
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    IPHONEOS_DEPLOYMENT_TARGET: 17.0
+    TARGETED_DEVICE_FAMILY: 1,2
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  MathCurveKit:
+    type: framework
+    platform: iOS
+    sources:
+      - path: MathCurveKit/Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.paidax.mathcurveloaders.kit
+  MathCurveLoadersApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: MathCurveLoadersApp/Sources
+    dependencies:
+      - target: MathCurveKit
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: NO
+        PRODUCT_BUNDLE_IDENTIFIER: com.adityadaniel.MathCurveLoaders
+        INFOPLIST_FILE: MathCurveLoadersApp/Info.plist
+        PRODUCT_NAME: MathCurveLoadersApp
+  MathCurveKitTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: MathCurveKit/Tests
+    dependencies:
+      - target: MathCurveKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.paidax.mathcurveloaders.kittests
+  MathCurveLoadersAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: MathCurveLoadersApp/Tests
+    dependencies:
+      - target: MathCurveLoadersApp
+      - target: MathCurveKit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.paidax.mathcurveloaders.apptests
+
+schemes:
+  MathCurveKit:
+    build:
+      targets:
+        MathCurveKit: all
+    test:
+      targets:
+        - name: MathCurveKitTests
+  MathCurveLoadersApp:
+    build:
+      targets:
+        MathCurveLoadersApp: all
+    test:
+      targets:
+        - name: MathCurveLoadersAppTests
+        - name: MathCurveKitTests

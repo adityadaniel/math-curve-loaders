@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AD3E31DCDBDB4E136673CD3 /* CurveCatalog+Expressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD47D82EE2DA455B5A34FED0 /* CurveCatalog+Expressive.swift */; };
+		2813D1C6A808DDC74E78E7E1 /* CurveDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FD7DD7D2B62CBC610C68E3 /* CurveDetailScreen.swift */; };
+		29D40484F3AD3E45ACECA232 /* CurveParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC126487E93020724FB7F2F /* CurveParityTests.swift */; };
+		309FB69A9D3E82379F732EA9 /* CurveCatalog+Classics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F95D89009FD481CD1AED88B /* CurveCatalog+Classics.swift */; };
+		364CC0EBD32FDA9CBB21C5D3 /* MathCurveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD376DE7241700186C7BD3F /* MathCurveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		369EE5B6085BC7D2F030A14F /* MathCurveLoadersAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D0F51F082C645E2C6DA38 /* MathCurveLoadersAppApp.swift */; };
+		41795A7BB2A8CA194FF82A08 /* CurveCatalog+Spirals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE0C732F2BC308CE4B7336F /* CurveCatalog+Spirals.swift */; };
+		4E9F8B127B9B1887320C8821 /* CurveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736F3F46A40C26522B789493 /* CurveCardView.swift */; };
+		573E2E3EBEEF4548081466C5 /* CurveLoaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AEA44CFFBB5D0F22D21FE5 /* CurveLoaderStyle.swift */; };
+		5A63D0BC80E37DD2637F0D69 /* MathCurveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD376DE7241700186C7BD3F /* MathCurveKit.framework */; };
+		5BE690FF743DD586DA7B2DF1 /* CurveDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F7253105E9B002888E1E8A /* CurveDetailState.swift */; };
+		5C320151846B23BDECB5A1FD /* CurveCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519D5C75B6894DB0C7967E8C /* CurveCatalog.swift */; };
+		5C8E4F72BF291FDE939DEF8F /* MathCurveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD376DE7241700186C7BD3F /* MathCurveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5EAA1F541BC874F1A04BD376 /* CurveParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510BF81B3B5BF506EA78C262 /* CurveParameters.swift */; };
+		63BB758590F3A36436263747 /* MathCurveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD376DE7241700186C7BD3F /* MathCurveKit.framework */; };
+		6B7A2B045A0B784FC408E393 /* CurveMathHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F310F4754DDFEFA727BE9D5 /* CurveMathHelpers.swift */; };
+		6DAFA48C482D372C13601BA3 /* MathCurveKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAD376DE7241700186C7BD3F /* MathCurveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7308DEE60E6A242CC11811FA /* MathCurveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD376DE7241700186C7BD3F /* MathCurveKit.framework */; };
+		73B9D2928832DC454035F738 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB2EA63E1E6A9F14E158E3E /* AppStrings.swift */; };
+		8A2D290BEA9CEE1AE7D163F9 /* CurveRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D95A12B00735240C5FE3F7C /* CurveRuntime.swift */; };
+		A2EF1936E73465C21B24B7E7 /* CurveGalleryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C540A732D1B00D624E5802 /* CurveGalleryGridView.swift */; };
+		A364D5C35814E9EECE5BBCDD /* CurveSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDDDA1854C278C2A8E44F9E /* CurveSpec.swift */; };
+		A8A82C0EC6B796A791BD0FA4 /* CurveControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99943252A1EF6ADCC993E0 /* CurveControl.swift */; };
+		B8638D9927C82DBE17614275 /* CurveCodeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BDBAA3F0E7D8515F1A0BF2 /* CurveCodeFormatter.swift */; };
+		C587402EC15C8E1DD27A35D8 /* CurveParameterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D958DCB184A2F951DFF3EF /* CurveParameterTests.swift */; };
+		C8F0EE92D9F542FD2943904C /* AppSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65C09FF11C989B4356CD80C /* AppSmokeTests.swift */; };
+		CCA47A2719E0309109D026D2 /* CurveEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921338FF3E8F098103E8C64D /* CurveEngine.swift */; };
+		CD26D45A16054B9FD191D349 /* ParticleSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5199BBF4FEB8D32B92242CA /* ParticleSample.swift */; };
+		DA8AA3304EFDB39ACAC125A7 /* CurveDetailStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339FDFE5A19F7A67423A7FF8 /* CurveDetailStateTests.swift */; };
+		DD5CFCC444A96282070B24AF /* CurveEngineInvariantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63677F63B1E89C48C0B8EE9D /* CurveEngineInvariantTests.swift */; };
+		DFE19A9A290E0CE76700646B /* CurveLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AAAF76243D817E5139B0FB /* CurveLoaderView.swift */; };
+		F14834ECFBA216F676130496 /* CurveCatalog+Rose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168297D529645176202A11CF /* CurveCatalog+Rose.swift */; };
+		F87E217727E9908C9B407749 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985489D50FF3987722887918 /* RootView.swift */; };
+		F938FCFE6F2A023FC38E2877 /* CurveLoaderStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BB697DD6D8DA60741DECEA /* CurveLoaderStyleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29C61EB7670B5FBEFE3A43F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C919521C4B5C914545D3C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D104CFD535B7A6BCAFF4736C;
+			remoteInfo = MathCurveKit;
+		};
+		DED750FF2DEDDB0090C062F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C919521C4B5C914545D3C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D104CFD535B7A6BCAFF4736C;
+			remoteInfo = MathCurveKit;
+		};
+		E556F44CD801238B3640C5E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C919521C4B5C914545D3C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01374A1F295036E7C3159F26;
+			remoteInfo = MathCurveLoadersApp;
+		};
+		EE4F847D92ED42B716CF1E40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C919521C4B5C914545D3C05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D104CFD535B7A6BCAFF4736C;
+			remoteInfo = MathCurveKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		273AF740DD2B20AA8B43609C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				364CC0EBD32FDA9CBB21C5D3 /* MathCurveKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B8C171C89AACFB7F325284 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DAFA48C482D372C13601BA3 /* MathCurveKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61B6D20C007A17ADC53987E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5C8E4F72BF291FDE939DEF8F /* MathCurveKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01D958DCB184A2F951DFF3EF /* CurveParameterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveParameterTests.swift; sourceTree = "<group>"; };
+		168297D529645176202A11CF /* CurveCatalog+Rose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurveCatalog+Rose.swift"; sourceTree = "<group>"; };
+		1BC126487E93020724FB7F2F /* CurveParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveParityTests.swift; sourceTree = "<group>"; };
+		1D95A12B00735240C5FE3F7C /* CurveRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveRuntime.swift; sourceTree = "<group>"; };
+		1FE0C732F2BC308CE4B7336F /* CurveCatalog+Spirals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurveCatalog+Spirals.swift"; sourceTree = "<group>"; };
+		29BB697DD6D8DA60741DECEA /* CurveLoaderStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveLoaderStyleTests.swift; sourceTree = "<group>"; };
+		339FDFE5A19F7A67423A7FF8 /* CurveDetailStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveDetailStateTests.swift; sourceTree = "<group>"; };
+		40AAAF76243D817E5139B0FB /* CurveLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveLoaderView.swift; sourceTree = "<group>"; };
+		44F7253105E9B002888E1E8A /* CurveDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveDetailState.swift; sourceTree = "<group>"; };
+		510BF81B3B5BF506EA78C262 /* CurveParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveParameters.swift; sourceTree = "<group>"; };
+		519D5C75B6894DB0C7967E8C /* CurveCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveCatalog.swift; sourceTree = "<group>"; };
+		57D6234B3609D71C61FD1C68 /* MathCurveLoadersApp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = MathCurveLoadersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F95D89009FD481CD1AED88B /* CurveCatalog+Classics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurveCatalog+Classics.swift"; sourceTree = "<group>"; };
+		63677F63B1E89C48C0B8EE9D /* CurveEngineInvariantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveEngineInvariantTests.swift; sourceTree = "<group>"; };
+		67FD7DD7D2B62CBC610C68E3 /* CurveDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveDetailScreen.swift; sourceTree = "<group>"; };
+		6BB2EA63E1E6A9F14E158E3E /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		736F3F46A40C26522B789493 /* CurveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveCardView.swift; sourceTree = "<group>"; };
+		816BE7C415028C10624B6BF3 /* MathCurveKitTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MathCurveKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A99943252A1EF6ADCC993E0 /* CurveControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveControl.swift; sourceTree = "<group>"; };
+		8F310F4754DDFEFA727BE9D5 /* CurveMathHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveMathHelpers.swift; sourceTree = "<group>"; };
+		91C540A732D1B00D624E5802 /* CurveGalleryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveGalleryGridView.swift; sourceTree = "<group>"; };
+		921338FF3E8F098103E8C64D /* CurveEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveEngine.swift; sourceTree = "<group>"; };
+		985489D50FF3987722887918 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		9FDDDA1854C278C2A8E44F9E /* CurveSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveSpec.swift; sourceTree = "<group>"; };
+		B5199BBF4FEB8D32B92242CA /* ParticleSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSample.swift; sourceTree = "<group>"; };
+		C5BDBAA3F0E7D8515F1A0BF2 /* CurveCodeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveCodeFormatter.swift; sourceTree = "<group>"; };
+		CD47D82EE2DA455B5A34FED0 /* CurveCatalog+Expressive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurveCatalog+Expressive.swift"; sourceTree = "<group>"; };
+		DAD376DE7241700186C7BD3F /* MathCurveKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MathCurveKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9D0F51F082C645E2C6DA38 /* MathCurveLoadersAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathCurveLoadersAppApp.swift; sourceTree = "<group>"; };
+		EB2B1112721242FAB618EB3D /* MathCurveLoadersAppTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = MathCurveLoadersAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65C09FF11C989B4356CD80C /* AppSmokeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSmokeTests.swift; sourceTree = "<group>"; };
+		F6AEA44CFFBB5D0F22D21FE5 /* CurveLoaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveLoaderStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D81E4BF8925B9BE09266959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63BB758590F3A36436263747 /* MathCurveKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4551C5CB17276BFECD42AE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A63D0BC80E37DD2637F0D69 /* MathCurveKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E109C36E9EFF6CFA6DBE0BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7308DEE60E6A242CC11811FA /* MathCurveKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007A9DCB3C0C42F551A60B1B /* MathCurveKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				339FDFE5A19F7A67423A7FF8 /* CurveDetailStateTests.swift */,
+				63677F63B1E89C48C0B8EE9D /* CurveEngineInvariantTests.swift */,
+				29BB697DD6D8DA60741DECEA /* CurveLoaderStyleTests.swift */,
+				01D958DCB184A2F951DFF3EF /* CurveParameterTests.swift */,
+				1BC126487E93020724FB7F2F /* CurveParityTests.swift */,
+			);
+			path = MathCurveKitTests;
+			sourceTree = "<group>";
+		};
+		0626CC3BCEE97977429037AD /* MathCurveLoadersApp */ = {
+			isa = PBXGroup;
+			children = (
+				6BB2EA63E1E6A9F14E158E3E /* AppStrings.swift */,
+				736F3F46A40C26522B789493 /* CurveCardView.swift */,
+				67FD7DD7D2B62CBC610C68E3 /* CurveDetailScreen.swift */,
+				91C540A732D1B00D624E5802 /* CurveGalleryGridView.swift */,
+				DB9D0F51F082C645E2C6DA38 /* MathCurveLoadersAppApp.swift */,
+				985489D50FF3987722887918 /* RootView.swift */,
+			);
+			path = MathCurveLoadersApp;
+			sourceTree = "<group>";
+		};
+		295BE7AB55CAA35B1655EF1A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9B8AB85889D3484B60198D1D /* MathCurveLoadersAppTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3962F51F47402A42113D2D22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD376DE7241700186C7BD3F /* MathCurveKit.framework */,
+				816BE7C415028C10624B6BF3 /* MathCurveKitTests.xctest */,
+				57D6234B3609D71C61FD1C68 /* MathCurveLoadersApp.app */,
+				EB2B1112721242FAB618EB3D /* MathCurveLoadersAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C7F82354EC7F1A76A2F8CF8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				007A9DCB3C0C42F551A60B1B /* MathCurveKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		3DE5AF318E67EE49FD2CFEFE /* MathCurveLoadersApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA5ABE46F23A938906197B88 /* Sources */,
+				295BE7AB55CAA35B1655EF1A /* Tests */,
+			);
+			path = MathCurveLoadersApp;
+			sourceTree = "<group>";
+		};
+		4A2AC268891002428A5A1FCC /* MathCurveKit */ = {
+			isa = PBXGroup;
+			children = (
+				519D5C75B6894DB0C7967E8C /* CurveCatalog.swift */,
+				5F95D89009FD481CD1AED88B /* CurveCatalog+Classics.swift */,
+				CD47D82EE2DA455B5A34FED0 /* CurveCatalog+Expressive.swift */,
+				168297D529645176202A11CF /* CurveCatalog+Rose.swift */,
+				1FE0C732F2BC308CE4B7336F /* CurveCatalog+Spirals.swift */,
+				C5BDBAA3F0E7D8515F1A0BF2 /* CurveCodeFormatter.swift */,
+				8A99943252A1EF6ADCC993E0 /* CurveControl.swift */,
+				44F7253105E9B002888E1E8A /* CurveDetailState.swift */,
+				921338FF3E8F098103E8C64D /* CurveEngine.swift */,
+				F6AEA44CFFBB5D0F22D21FE5 /* CurveLoaderStyle.swift */,
+				40AAAF76243D817E5139B0FB /* CurveLoaderView.swift */,
+				8F310F4754DDFEFA727BE9D5 /* CurveMathHelpers.swift */,
+				510BF81B3B5BF506EA78C262 /* CurveParameters.swift */,
+				1D95A12B00735240C5FE3F7C /* CurveRuntime.swift */,
+				9FDDDA1854C278C2A8E44F9E /* CurveSpec.swift */,
+				B5199BBF4FEB8D32B92242CA /* ParticleSample.swift */,
+			);
+			path = MathCurveKit;
+			sourceTree = "<group>";
+		};
+		7E3D59D77C7DC9A262DA73E9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4A2AC268891002428A5A1FCC /* MathCurveKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9B8AB85889D3484B60198D1D /* MathCurveLoadersAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F65C09FF11C989B4356CD80C /* AppSmokeTests.swift */,
+			);
+			path = MathCurveLoadersAppTests;
+			sourceTree = "<group>";
+		};
+		C2D9A6E7A91E043613C7D0B2 /* MathCurveKit */ = {
+			isa = PBXGroup;
+			children = (
+				7E3D59D77C7DC9A262DA73E9 /* Sources */,
+				3C7F82354EC7F1A76A2F8CF8 /* Tests */,
+			);
+			path = MathCurveKit;
+			sourceTree = "<group>";
+		};
+		F8618AC01DB093152B92689D = {
+			isa = PBXGroup;
+			children = (
+				C2D9A6E7A91E043613C7D0B2 /* MathCurveKit */,
+				3DE5AF318E67EE49FD2CFEFE /* MathCurveLoadersApp */,
+				3962F51F47402A42113D2D22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA5ABE46F23A938906197B88 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0626CC3BCEE97977429037AD /* MathCurveLoadersApp */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01374A1F295036E7C3159F26 /* MathCurveLoadersApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71028BAD36FF3403387EF549 /* Build configuration list for PBXNativeTarget "MathCurveLoadersApp" */;
+			buildPhases = (
+				9BEC87EBC45D6A927B8F18F9 /* Sources */,
+				E109C36E9EFF6CFA6DBE0BA4 /* Frameworks */,
+				273AF740DD2B20AA8B43609C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174BB037C6D6A6C413F14AB4 /* PBXTargetDependency */,
+			);
+			name = MathCurveLoadersApp;
+			packageProductDependencies = (
+			);
+			productName = MathCurveLoadersApp;
+			productReference = 57D6234B3609D71C61FD1C68 /* MathCurveLoadersApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E45D3C6D93B952525E1CA54 /* MathCurveKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099242757DC3BF68770E8F2D /* Build configuration list for PBXNativeTarget "MathCurveKitTests" */;
+			buildPhases = (
+				2B7A30C36F2EC3D54AC0E5B4 /* Sources */,
+				C4551C5CB17276BFECD42AE9 /* Frameworks */,
+				E61B6D20C007A17ADC53987E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA006440483D2EE5A3B2B2A1 /* PBXTargetDependency */,
+			);
+			name = MathCurveKitTests;
+			packageProductDependencies = (
+			);
+			productName = MathCurveKitTests;
+			productReference = 816BE7C415028C10624B6BF3 /* MathCurveKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86B025FC947B846119C5014F /* MathCurveLoadersAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5C2BD21C08730B4E6B09FCC /* Build configuration list for PBXNativeTarget "MathCurveLoadersAppTests" */;
+			buildPhases = (
+				52302293BD883513416251FF /* Sources */,
+				9D81E4BF8925B9BE09266959 /* Frameworks */,
+				A2B8C171C89AACFB7F325284 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CD041BE8B1D35DC11520AD /* PBXTargetDependency */,
+				70CD41D93A38A69C1D5C1BB9 /* PBXTargetDependency */,
+			);
+			name = MathCurveLoadersAppTests;
+			packageProductDependencies = (
+			);
+			productName = MathCurveLoadersAppTests;
+			productReference = EB2B1112721242FAB618EB3D /* MathCurveLoadersAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D104CFD535B7A6BCAFF4736C /* MathCurveKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32EBCBE6E315B0BFF7369C76 /* Build configuration list for PBXNativeTarget "MathCurveKit" */;
+			buildPhases = (
+				C948756B9EBBA7CC8D49C18F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathCurveKit;
+			packageProductDependencies = (
+			);
+			productName = MathCurveKit;
+			productReference = DAD376DE7241700186C7BD3F /* MathCurveKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C919521C4B5C914545D3C05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = E21E10209F2BF5EC57444039 /* Build configuration list for PBXProject "MathCurveLoaders" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F8618AC01DB093152B92689D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3962F51F47402A42113D2D22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D104CFD535B7A6BCAFF4736C /* MathCurveKit */,
+				5E45D3C6D93B952525E1CA54 /* MathCurveKitTests */,
+				01374A1F295036E7C3159F26 /* MathCurveLoadersApp */,
+				86B025FC947B846119C5014F /* MathCurveLoadersAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B7A30C36F2EC3D54AC0E5B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8AA3304EFDB39ACAC125A7 /* CurveDetailStateTests.swift in Sources */,
+				DD5CFCC444A96282070B24AF /* CurveEngineInvariantTests.swift in Sources */,
+				F938FCFE6F2A023FC38E2877 /* CurveLoaderStyleTests.swift in Sources */,
+				C587402EC15C8E1DD27A35D8 /* CurveParameterTests.swift in Sources */,
+				29D40484F3AD3E45ACECA232 /* CurveParityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52302293BD883513416251FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8F0EE92D9F542FD2943904C /* AppSmokeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEC87EBC45D6A927B8F18F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B9D2928832DC454035F738 /* AppStrings.swift in Sources */,
+				4E9F8B127B9B1887320C8821 /* CurveCardView.swift in Sources */,
+				2813D1C6A808DDC74E78E7E1 /* CurveDetailScreen.swift in Sources */,
+				A2EF1936E73465C21B24B7E7 /* CurveGalleryGridView.swift in Sources */,
+				369EE5B6085BC7D2F030A14F /* MathCurveLoadersAppApp.swift in Sources */,
+				F87E217727E9908C9B407749 /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C948756B9EBBA7CC8D49C18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309FB69A9D3E82379F732EA9 /* CurveCatalog+Classics.swift in Sources */,
+				0AD3E31DCDBDB4E136673CD3 /* CurveCatalog+Expressive.swift in Sources */,
+				F14834ECFBA216F676130496 /* CurveCatalog+Rose.swift in Sources */,
+				41795A7BB2A8CA194FF82A08 /* CurveCatalog+Spirals.swift in Sources */,
+				5C320151846B23BDECB5A1FD /* CurveCatalog.swift in Sources */,
+				B8638D9927C82DBE17614275 /* CurveCodeFormatter.swift in Sources */,
+				A8A82C0EC6B796A791BD0FA4 /* CurveControl.swift in Sources */,
+				5BE690FF743DD586DA7B2DF1 /* CurveDetailState.swift in Sources */,
+				CCA47A2719E0309109D026D2 /* CurveEngine.swift in Sources */,
+				573E2E3EBEEF4548081466C5 /* CurveLoaderStyle.swift in Sources */,
+				DFE19A9A290E0CE76700646B /* CurveLoaderView.swift in Sources */,
+				6B7A2B045A0B784FC408E393 /* CurveMathHelpers.swift in Sources */,
+				5EAA1F541BC874F1A04BD376 /* CurveParameters.swift in Sources */,
+				8A2D290BEA9CEE1AE7D163F9 /* CurveRuntime.swift in Sources */,
+				A364D5C35814E9EECE5BBCDD /* CurveSpec.swift in Sources */,
+				CD26D45A16054B9FD191D349 /* ParticleSample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		174BB037C6D6A6C413F14AB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D104CFD535B7A6BCAFF4736C /* MathCurveKit */;
+			targetProxy = 29C61EB7670B5FBEFE3A43F5 /* PBXContainerItemProxy */;
+		};
+		25CD041BE8B1D35DC11520AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01374A1F295036E7C3159F26 /* MathCurveLoadersApp */;
+			targetProxy = E556F44CD801238B3640C5E7 /* PBXContainerItemProxy */;
+		};
+		70CD41D93A38A69C1D5C1BB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D104CFD535B7A6BCAFF4736C /* MathCurveKit */;
+			targetProxy = EE4F847D92ED42B716CF1E40 /* PBXContainerItemProxy */;
+		};
+		CA006440483D2EE5A3B2B2A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D104CFD535B7A6BCAFF4736C /* MathCurveKit */;
+			targetProxy = DED750FF2DEDDB0090C062F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00ED7CD7C5CA87F34EE68E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paidax.mathcurveloaders.kittests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F19751DC5581F9D75F0614E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paidax.mathcurveloaders.apptests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathCurveLoadersApp.app/MathCurveLoadersApp";
+			};
+			name = Release;
+		};
+		2F77E8DAB255AC5D5D076DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paidax.mathcurveloaders.apptests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathCurveLoadersApp.app/MathCurveLoadersApp";
+			};
+			name = Debug;
+		};
+		380121301F7A0C9FA31659E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paidax.mathcurveloaders.kit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		580684747DC18FE6D62616D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89EEE21C2F0C11D2136DC9CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EDA76BA0E396873DC2A0F61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paidax.mathcurveloaders.kit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A66022110C363121A3B9106B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MathCurveLoadersApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityadaniel.MathCurveLoaders;
+				PRODUCT_NAME = MathCurveLoadersApp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1C08FAB679F6F79B7E6E228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paidax.mathcurveloaders.kittests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CBD60A814F36F7B24028D0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = MathCurveLoadersApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityadaniel.MathCurveLoaders;
+				PRODUCT_NAME = MathCurveLoadersApp;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		099242757DC3BF68770E8F2D /* Build configuration list for PBXNativeTarget "MathCurveKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ED7CD7C5CA87F34EE68E00 /* Debug */,
+				B1C08FAB679F6F79B7E6E228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		32EBCBE6E315B0BFF7369C76 /* Build configuration list for PBXNativeTarget "MathCurveKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EDA76BA0E396873DC2A0F61 /* Debug */,
+				380121301F7A0C9FA31659E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71028BAD36FF3403387EF549 /* Build configuration list for PBXNativeTarget "MathCurveLoadersApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBD60A814F36F7B24028D0CF /* Debug */,
+				A66022110C363121A3B9106B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E21E10209F2BF5EC57444039 /* Build configuration list for PBXProject "MathCurveLoaders" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580684747DC18FE6D62616D6 /* Debug */,
+				89EEE21C2F0C11D2136DC9CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E5C2BD21C08730B4E6B09FCC /* Build configuration list for PBXNativeTarget "MathCurveLoadersAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F77E8DAB255AC5D5D076DA6 /* Debug */,
+				2F19751DC5581F9D75F0614E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C919521C4B5C914545D3C05 /* Project object */;
+}

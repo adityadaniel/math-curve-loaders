@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Local tooling
+.codex/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode user/state files
+DerivedData/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+
+# Keep project/workspace files, ignore only user-specific data
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Simulator capture outputs
+*.trace
